@@ -21,7 +21,7 @@ if [ ${#key} -lt 8 ]; then
     exit 1
 fi
 for file in $(find ${crypt_dir} -name "*.enc"); do
-    outfile=${file%.*}.dec
+    outfile=${file%.*}
     echo "[$file] decrypt to [${outfile}]"
     openssl aes-256-cbc -d -k ${key} -in ${file} -out ${outfile}
 done
