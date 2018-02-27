@@ -28,7 +28,8 @@ $ ./decrypt.sh キー
 
 ```
 $ cat .gitignore
-*.*
+*
+!.gitignore
 !README.md
 !encrypt.sh
 !decrypt.sh

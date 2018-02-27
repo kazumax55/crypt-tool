@@ -1,0 +1,7 @@
+*
+!.gitignore
+!README.md
+!encrypt.sh
+!decrypt.sh
+!crypt_dir/.keep
+!**/*.enc
